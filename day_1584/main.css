@@ -1,0 +1,219 @@
+@import 'https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container-tags {
+
+    width: 663px;
+    height: 254px;
+    margin-left: 50px;
+    margin-top: 100px;
+    background-color: #F1E2F5;
+    border-radius: 12px;
+    padding: 32px;
+
+}
+
+.tags-section .title {
+    color: #1A2653;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.tags-section .tags {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+
+
+}
+
+.tags-section .tags .tag {
+
+    margin: 5px 5px;
+    width: auto;
+    cursor: pointer;
+
+    flex-grow: 1;
+    padding: 0 15px;
+    min-width: 53px;
+    max-width: 240px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+}
+
+.tags-section .tags .tag span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+
+.tags-section .tags .tag:hover {
+
+    background-color: #1A2653;
+    color: white;
+    transition: all ease .4s;
+
+
+}
+
+/* SEARCH */
+.container-search {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 594px;
+    height: 128px;
+    margin-left: 50px;
+    margin-top: 100px;
+    background-color: #F1E2F5;
+    border-radius: 12px;
+    padding: 32px;
+
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-box svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 54px;
+    margin-left: 10px;
+
+
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 16px;
+    height: 54px;
+    width: 360px;
+    border-radius: 16px;
+    padding-inline-start: 44px;
+}
+
+.search-box input::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A2653;
+    opacity: 0.7;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.search-button button {
+    background-color: #1A2653;
+    width: 100px;
+    height: 54px;
+    border-radius: 16px;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+
+/* RECENT POSTS */
+
+.container-recent-posts {
+    width: 530px;
+    height: 460px;
+    background-color: #F1E2F5;
+    margin-left: 50px;
+    margin-top: 100px;
+    padding: 32px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.container-recent-posts .recent-posts-title span {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+
+}
+
+.container-recent-posts .recent-posts-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    justify-content: space-between;
+    flex: 1;
+    overflow-y: auto;
+}
+
+
+.container-recent-posts .recent-posts-items .post-item {
+    width: 460px;
+    height: 60px;
+    padding-inline-start: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 60px;
+
+}
+
+
+.container-recent-posts .recent-posts-items .active {
+    background-color: white;
+    border-radius: 16px;
+    text-align: left;
+
+}
+
