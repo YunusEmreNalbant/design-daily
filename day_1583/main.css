@@ -1,0 +1,198 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 590px;
+    height: 577px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 16px;
+    padding: 85px;
+}
+
+.container .login-area {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+.container .login-area .user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 78px;
+    max-width: 260px;
+    min-width: 250px;
+
+}
+
+
+.container .login-area .user .info {
+    padding-inline-start: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.container .login-area .user .info .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #132B50;
+}
+
+.container .login-area .user .info .name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #132B50;
+}
+
+.container .login-area > span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #132B50;
+}
+
+.login-area .input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-area .input-area > span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #132B50;
+}
+.input-area .password  {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+.input-area .password svg  {
+    position: absolute;
+    z-index: 1;
+    margin-inline-start: 16px;
+
+}
+
+.input-area .password > input {
+    width: 371px;
+    height: 60px;
+    border-radius: 8px;
+    outline: none;
+    padding: 16px;
+    padding-inline-start: 54px;
+    border: 1px solid #132B50;
+
+    position: relative;
+}
+
+.action-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 370px;
+
+}
+.login-area .action-area  div {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.login-area .action-area div  > label{
+    display: block;
+    width: 60px;
+    height: 36px;
+    background-color: white;
+    border-radius: 44px;
+    border: 1px solid #132B50;
+    position: relative;
+    cursor: pointer;
+}
+
+.login-area .action-area div > label .check-btn{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #132B50;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transition: all ease .5s;
+}
+.login-area .action-area  div  > label input:checked + .check-btn{
+    transition: all ease .5s;
+    left: 30px;
+
+}
+
+.login-area .action-area   div  > label input{
+    display: none;
+}
+.login-area .action-area  div > span{
+    margin-inline-start: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #132B50;
+}
+
+.continue{
+    border: none;
+    background-color: #132B50;
+    color: white;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.reset-password {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #132B50;
+}
+input[type="password"]
+{
+    font: large Verdana,sans-serif;
+    letter-spacing: 1px;
+}
